@@ -1,21 +1,9 @@
-export interface IRawBook {
+export interface IJob {
 	id: number;
-	idCode: string;
 	title: string;
+	company: string;
+	url: string;
 	description: string;
-	notes: string;
-	yearMonth: string;
-	rank: number;
-	language: string;
-	extras: string;
-	systemWhenCreated: string;
-	systemWhoCreated: string;
-}
-
-export interface IBook {
-	id: number;
-	idCode: string;
-	title: string;
-	description: string;
-	language: string;
+	skillList: string;
+	publicationDate: string;
 }
