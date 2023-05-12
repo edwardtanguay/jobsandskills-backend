@@ -1,10 +1,15 @@
 import fs from 'fs';
-import {IJob} from './interfaces.js';
+import {IJob, ISkill} from './interfaces.js';
 
 const jobs: IJob[] = JSON.parse(fs.readFileSync('./src/data/jobs.json', 'utf8'));
+const skills: ISkill[] = JSON.parse(fs.readFileSync('./src/data/skills.json', 'utf8'));
 
 export const getJobs = () => {
 	return jobs;
+}
+
+export const getSkills = () => {
+	return skills;
 }
 
 export const getApiInstructions = () => {

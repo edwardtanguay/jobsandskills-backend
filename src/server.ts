@@ -14,6 +14,10 @@ app.get('/jobs', (req: express.Request, res: express.Response) => {
 	res.send(model.getJobs());
 });
 
+app.get('/skills', (req: express.Request, res: express.Response) => {
+	res.send(model.getSkills());
+});
+
 app.listen(config.port, () => {
 	console.log(`listening on port http://localhost:${config.port}`);
 });

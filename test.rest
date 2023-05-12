@@ -1,7 +1,10 @@
-@url = http://localhost:3610
+@url = http://localhost:5500
 
 ### BASE
 {{url}}
 
 ### JOBS
 {{url}}/jobs
+
+### SKILLS
+{{url}}/skills
